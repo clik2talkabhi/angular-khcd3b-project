@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
+
 import { products } from '../products';
 import { CartService } from '../cart.service';
 
@@ -20,6 +21,8 @@ product;
   addToCart(product){
     window.alert('your product has been added to cart successfully!');
     this.cartService.addTocart(product);
+    
+  
   }
   ngOnInit() {
     this.route.paramMap.subscribe(
